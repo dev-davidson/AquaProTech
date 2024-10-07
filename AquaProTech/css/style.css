@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200;300;400;700;800&family=Lobster&family=Nerko+One&family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* inicio cabeçalho */
+
+#container {
+    background: url('/img/fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    padding: 3px;
+    color: #fff;
+}
+
+#container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#container > * {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 2;
+}
+
+header .logo img {
+    max-height: 200px;
+}
+
+.nav-container .navbar {
+    list-style: none;
+    display: flex;
+    gap: -500px;
+}
+
+.nav-container .navbar li {
+    margin: 0 1rem;
+}
+
+.nav-container .navbar li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container {
+    flex-grow: 1;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    font-size: 20px;
+    padding: 7px;
+    color: rgb(252, 251, 251);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li:hover {
+    background-color: #800808;
+}
+
+/* fim cabeçalho */
+
+/* Estilo para a seção de boas-vindas (article) */
+.inicio {
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+    position: relative;
+}
+
+.inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.inicio h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    position: relative;
+    z-index: 2;
+}
+
+.btn {
+    background-color: #800808;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.btn:hover {
+    background-color: #1b1a1a;
+}
+
+.inicio a.btn {
+    z-index: 2;
+}
+
+/* inicio serviços */
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    background: #800808;
+    padding: 1rem;
+    border-radius: 100px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+    color: #f7f6f6;
+}
+
+.servicos {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.servico img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.servico-info {
+    flex: 1;
+}
+
+.servico-info p {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #f7f6f6;
+}
+
+.servicos {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* fim serviços */
+
+/* inicio galerias */
+section {
+    grid-area: section;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.galeria {
+    text-align: center;
+    padding: 2rem;
+}
+
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.galeria img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* fim galerias */
+
+/* inicio promoções */
+.promocoes {
+    text-align: center;
+    padding: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #c6c2c2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #800808;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #1b1a1a;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* fim promoções */
+
+/* inicio depoimentos */
+.depoimentos {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.depoimentos h2 {
+    font-size: 2rem;
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.depoimento {
+    background-color: #c6c2c2;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1;
+}
+
+.depoimento img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.depoimento p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.depoimento h4 {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* fim depoimentos */
+
+/* inicio contato */
+#contato {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 3rem;
+    color: #fff;
+}
+
+#contato h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contato label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#contato button {
+    background-color: #800808;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#contato button:hover {
+    background-color: #1b1a1a;
+}
+
+/* fim contato */
+
+/* inicio rodapé */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 1rem; 
+}
+
+footer p {
+    margin: 0;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* fim rodapé */
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .servico {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .servico img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .galeria-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .inicio h1 {
+        font-size: 2rem;
+    }
+
+    .inicio p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    .servico-info p {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 1rem;
+    }
+}
